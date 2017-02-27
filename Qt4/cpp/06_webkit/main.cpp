@@ -10,12 +10,12 @@
 int main(int argc, char **argv)
 {
   QApplication app(argc, argv);
-  QWidget window;
-  window.setWindowTitle("Simple example");
 
   QWebView *view = new QWebView();
 
-  view->resize(200,200);
+  view->setWindowTitle("Films By Kris");
+
+  view->resize(1920,1080);
   view->load(QUrl("http://www.filmsbykris.com"));
   view->show();
 
